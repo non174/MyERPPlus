@@ -1,0 +1,48 @@
+#main-section{
+	font-family: $font-logo-small;
+	height: 600px;
+	.flex-item{
+		margin-top: 230px;
+		color: #222333;
+	}
+}
+
+#hero-section{
+	background: url('https://img.freepik.com/free-photo/business-people-shaking-hands-together_53876-20488.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500')
+		no-repeat top center;
+	background-size: cover;
+	height: 91.5vh;
+
+	.flex-item{
+		z-index: 100;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: bold;
+
+		.arrlink{
+			font-size: 25px;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+
+	&::before{
+		content: " ";
+		background: rgba(#222, 0.3);
+		height: 91.5vh;
+		width: 100%;
+		position: absolute;
+		top: 70;
+	}
+}
+
+.main-footer {
+	a{
+		color: #fff;
+		text-decoration: none;
+		&:hover{
+			color: #fff;
+		}
+	}
+}

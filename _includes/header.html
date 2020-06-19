@@ -1,0 +1,101 @@
+{% if site.navigation %}
+
+<style type="text/css">
+	.dropdown:hover>.dropdown-menu{
+		display: block;
+		color: skyblue;
+		}
+	.dropdown-item{
+		background-color: #F4F6F6;
+		border-bottom: 1px solid #DFE4E4;
+	}
+	.dropdown-item:hover{
+		background-color: white;
+		border-left: 2px solid skyblue;
+	}
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<div class="container">
+		<a href="{{ site.baseurl }}/"><br><br>
+			<img src="http://myerpplus.com/wp-content/uploads/thegem-logos/logo_e76905714cc81cdd301932943924ef13_1x.png" alt="Logo">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+	</div>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<div class="container"><br><br>
+		<h6>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav ml-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="{{ site.baseurl }}/">Beranda <span class="sr-only">(current)</span></a>
+		      </li>&nbsp;&nbsp;&nbsp;
+		    <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarSupportedContent" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Perusahaan
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+		          <a class="dropdown-item" href="/tentang-myerp-plus/">Tentang MYERP Plus</a>
+		          <a class="dropdown-item" href="/portopolio/">Portofolio</a>
+		        </div>
+		      </li>&nbsp;&nbsp;&nbsp;
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarSupportedContent" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Layanan
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+		          	<a class="dropdown-item" href="/software-erp-keuangan/">Software Erp Keuangan</a>
+		          	<a class="dropdown-item" href="/software-erp-dagang/">Software Erp Dagang</a>
+		          	<a class="dropdown-item" href="/software-erp-pabrik/">Software Erp Pabrik</a>
+		          	<a class="dropdown-item" href="/layanan-lainya/">Layanan Lainnya</a>
+		          </div>
+		      </li>&nbsp;&nbsp;&nbsp;
+		      <li class="nav-item">
+		        <a class="nav-link" href="/studi-kasus/">Study kasus</a>
+		      </li>&nbsp;&nbsp;&nbsp;
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarSupportedContent" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Suport
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+		          <a class="dropdown-item" href="/Tutorial/">Tutorial</a>
+		          <a class="dropdown-item" href="/faq/">FAQ</a>
+		        </div>
+		      </li>&nbsp;&nbsp;&nbsp;
+		      <li class="nav-item">
+		        <a class="nav-link" href="/trial/">Trial</a>
+		      </li>&nbsp;&nbsp;&nbsp;
+		      <li class="nav-item">
+		        <a class="nav-link" href="/demo/">Demo</a>
+		      </li>&nbsp;&nbsp;&nbsp;
+		      <li class="nav-item">
+		        <a class="nav-link" href="/kontak/">Kontak</a>
+		      </li>
+		    </ul>
+		  </div>
+	</nav>
+
+{% endif %}
+
+{% if site.welcome %}
+
+	<div class="d-flex justify-content-center" id="main-section">
+	
+		<div class="flex-item">
+			<h1>{{ site.title }}</h1>
+			<p class="text-center">
+				Verison : {{ site.version }} <br>
+				Changelog : {{ site.log_date | date: "%A, %d %B %Y %H:%M %P" }} <br>
+				Author : {{ site.author }} <br>
+				<small>Copyright (c) 2017 CB Media Group Indonesia</small>
+			</p>
+		</div>
+
+	</div>
+
+{% endif %}
+
+
