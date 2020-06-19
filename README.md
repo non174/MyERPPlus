@@ -1,4 +1,4 @@
-# Betta Dev Indonesia Education
+# MyERPlus
 
 ## Panduan untuk memulai dengan Jekyll.
 
@@ -11,7 +11,7 @@
 
 	$ git clone https://github.com/bettaeducation/jekyll-betta-starter.git
 	$ cd jekyll-betta-starter
-	$ jekyll serve _config_dev.yml
+	$ jekyll serve _config_dev.yml 
 
 **Package Include Bootstrap 4 Beta***
 
